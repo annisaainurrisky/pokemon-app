@@ -9,12 +9,14 @@ const Navbar = () => {
         <div className="flex flex-row justify-between gap-5">
           <img src={logo} alt="logo" className="w-[150px] cursor-pointer" />
           <div className="hidden lg:inline">
-            <Link to="/home">
-              <ul className="flex flex-row justify-between gap-5 mt-5">
+            <ul className="flex flex-row justify-between gap-5 mt-5">
+              <Link to="/home">
                 <li className="cursor-pointer">Home</li>
+              </Link>
+              <Link to="/my-pokemon">
                 <li className="cursor-pointer">My Pokemon</li>
-              </ul>
-            </Link>
+              </Link>
+            </ul>
           </div>
         </div>
         <div className="hidden lg:inline cursor-pointer">
