@@ -1,5 +1,3 @@
-import { Pokemon, ResponseApi, Detail, myPokeList } from "./types";
+import { Pokemon, ResponseApi, Detail } from "./types";
 
-
-export type { Pokemon, ResponseApi, Detail, myPokeList };
-
+export type { Pokemon, ResponseApi, Detail };
