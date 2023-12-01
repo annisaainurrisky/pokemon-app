@@ -61,6 +61,7 @@ const List = () => {
         {pokemons.map((pokemon) => {
           return (
             <Card
+              key={pokemon.name}
               name={pokemon.name}
               url={pokemon.url}
               onClick={() => navigateTo(pokemon.url.split("/")[6])}

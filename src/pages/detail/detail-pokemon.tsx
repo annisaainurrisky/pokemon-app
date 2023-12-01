@@ -59,7 +59,7 @@ const DetailPokemon = () => {
             className="absolute w-5 lg:w-8 mt-[35px] ms-[25px] md:me-[680px] lg:mb-[600px] cursor-pointer"
           />
         </Link>
-        <div className="flex items-center justify-center bg-gradient-to-t dark:from-black/50 dark:to-pokeblue from-white to-pokeblue lg:bg-gradient-to-l lg:from-white lg:to-pokeblue lg:min-h-full">
+        <div className="flex items-center justify-center bg-gradient-to-t dark:from-black/50 dark:to-pokeblue from-white to-pokeblue lg:bg-gradient-to-l lg:from-white lg:to-pokeblue lg:min-h-screen">
           <div className="w-56 md:w-64 lg:w-80">
             <img
               src={detail?.sprites.other.dream_world.front_default}
@@ -96,7 +96,7 @@ const DetailPokemon = () => {
               <div className="border-slate-300 border-2 rounded-md px-5 py-1 flex justify-center w-auto">
                 <ul>
                   {detail?.abilities.map((el: any) => {
-                    return <li>{el.ability.name}</li>;
+                    return <li key={el.id}>{el.ability.name}</li>;
                   })}
                 </ul>
               </div>
@@ -140,7 +140,7 @@ const DetailPokemon = () => {
             </ul>
             <ul className="flex flex-col gap-2">
               {detail?.stats.map((el: any) => {
-                return <li>{el.base_stat}</li>;
+                return <li key={el.id}>{el.base_stat}</li>;
               })}
             </ul>
           </div>
